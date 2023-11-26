@@ -8,4 +8,5 @@ router
   .get(NotesController.getNotes)
   .post(NotesController.createNode);
 
+router.route("/:noteId").get(NotesController.getNote);
 export default router;

@@ -9,7 +9,7 @@ function App() {
     async function loadNotes() {
       try {
         const res = await fetch("http://localhost:5000/api/notes", {
-          method: "GET"
+          method: "GET",
         });
         const data = await res.json();
         setNotes(data);
